@@ -4,6 +4,7 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
+                "${workspaceFolder}/include/",
                 "/opt/homebrew/include/"
             ],
             "defines": [],
@@ -13,7 +14,8 @@
             "compilerPath": "/usr/bin/clang++",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "macos-clang-arm64"
+            "intelliSenseMode": "macos-clang-arm64",
+            "configurationProvider": "mesonbuild.meson"
         }
     ],
     "version": 4

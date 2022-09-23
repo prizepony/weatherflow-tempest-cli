@@ -1,4 +1,4 @@
-#include "tempest.h"
+#include "tempest.hpp"
 #include <Poco/Net/HTTPRequest.h>
 
 // Constructor

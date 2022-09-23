@@ -1,5 +1,5 @@
-#ifndef TEMPEST_H
-#define TEMPEST_H
+#ifndef TEMPEST_HPP
+#define TEMPEST_HPP
 
 class Tempest
 {

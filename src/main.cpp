@@ -1,4 +1,4 @@
-#include "tempest.h"
+#include "tempest.hpp"
 
 #include <boost/program_options.hpp>
 
