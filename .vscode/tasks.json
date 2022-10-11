@@ -20,13 +20,10 @@
         },
         {
             "label": "build",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "type": "shell",
             "options": {
-                "cwd": "${workspaceFolder}/build"
+                "cwd": "${workspaceFolder}/builddir"
             },
             "command": "ninja",
             "args": [],
@@ -44,14 +41,25 @@
             }
         },
         {
+            "label": "build debug meson",
+            "type": "shell",
+            "command": "meson build --buildtype=debug && cd builddir && ninja",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
             "label": "clean",
             "group": "none",
             "type": "shell",
             "options": {
-                "cwd": "${workspaceFolder}/build"
+                "cwd": "${workspaceFolder}/builddir"
             },
             "command": "ninja",
-            "args": ["-t", "clean"],
+            "args": [
+                "-t",
+                "clean"
+            ],
             "problemMatcher": {
                 "base": "$gcc",
                 "fileLocation": [
