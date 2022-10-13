@@ -8,9 +8,23 @@
             "name": "Debug with Meson",
             "type": "cppdbg",
             "request": "launch",
-            "program": "./builddir/tempest-cli -v",
+            "program": "${workspaceFolder}/builddir/tempest-cli",
+            "preLaunchTask": "build",
+            "internalConsoleOptions": "openOnSessionStart",
+            "logging": {
+                "moduleLoad": false,
+                "programOutput": true,
+                "trace": false
+            },
+            "showDisplayString": false,
+            "args": [],
+            "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
-            "preLaunchTask": "build debug meson"
+            "environment": [],
+            "externalConsole": true, // set true to enable keyboard input
+            "osx": {
+                "MIMode": "lldb"
+            }
         }
     ]
 }

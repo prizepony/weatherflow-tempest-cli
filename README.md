@@ -11,5 +11,5 @@ The project is built using [VSCode](https://code.visualstudio.com/). Once open, 
 After Homebrew is installed, run the following in a terminal:
 
 ```
-brew install meson boost poco
+brew install meson boost
 ```

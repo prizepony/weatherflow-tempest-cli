@@ -9,10 +9,12 @@ inc_dirs = [
   '/opt/homebrew/include'
 ]
 
-boost_dep = dependency('boost', modules : ['program_options','log'])
+boost_dep = dependency('boost', modules : ['system', 'thread','program_options','log','log_setup'])
 
 executable('tempest-cli',
            'src/main.cpp',
+           'src/tempest.cpp',
+           'src/logger.cpp',
            include_directories : [ inc_dirs ],
            dependencies : [ boost_dep ],
            install : false)
